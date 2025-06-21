@@ -118,7 +118,7 @@ Currently the logic applies to `strips[0]` only. Expand it to handle each strip 
 const char* groupDefs[] = {
   "0-4",         // Group 0
   "5-9",         // Group 1
-  "10-14,16,18"  // Group 2
+  "10-14,16,18,20-60"  // Group 2
 };
 ```
 

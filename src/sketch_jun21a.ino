@@ -12,20 +12,20 @@ Adafruit_NeoPixel strips[NUM_STRIPS] = {
 const char* groupDefs[] = {
   "1-5",
   "8,10-12",
-  "20-25,30"
+  "20-25,,29,30,30-60"
 };
 const uint8_t groupCount = sizeof(groupDefs) / sizeof(groupDefs[0]);
 // ================================================
 
 // Holds actual parsed LED IDs per group
-#define MAX_GROUP_SIZE 20
+#define MAX_GROUP_SIZE 50
 uint8_t groups[groupCount][MAX_GROUP_SIZE];
 uint8_t groupSizes[groupCount];  // auto-filled
 
 // State
 float groupPhase[groupCount];
-float groupSpeed = 0.01;
-uint8_t brightness = 150;
+float groupSpeed = 0.001;
+uint8_t brightness = 10;
 bool isLedOff[TOTAL_LEDS];
 
 void setup() {
