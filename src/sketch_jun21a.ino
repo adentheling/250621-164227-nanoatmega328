@@ -2,7 +2,7 @@
 
 #define NUM_STRIPS 1
 #define LED_PIN    2
-#define TOTAL_LEDS 60
+#define TOTAL_LEDS 120
 
 Adafruit_NeoPixel strips[NUM_STRIPS] = {
   Adafruit_NeoPixel(TOTAL_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800)
@@ -10,9 +10,9 @@ Adafruit_NeoPixel strips[NUM_STRIPS] = {
 
 // ====== USER DEFINED GROUPS IN EASY FORMAT ======
 const char* groupDefs[] = {
-  "1-5",
-  "8,10-12",
-  "20-25,,29,30,30-60"
+  "0-9",     "10-19",   "20-29",   "30-39",
+  "40-49",   "50-59",   "60-69",   "70-79",
+  "80-89",   "90-99",   "100-109", "110-119"
 };
 const uint8_t groupCount = sizeof(groupDefs) / sizeof(groupDefs[0]);
 // ================================================
